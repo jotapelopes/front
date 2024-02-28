@@ -1,0 +1,25 @@
+body {
+    background-color: black;
+}
+
+h1 {
+    background-color: blue;
+    color: white;
+}
+
+p {
+    background-color: aqua;
+    color: chocolate;
+}
+
+#square {
+    background-color: beige;
+    height: 100px;
+    width: 100px;
+}
+
+#secondSquare {
+    background-color: red;
+    height: 100px;
+    width: 100px;
+}

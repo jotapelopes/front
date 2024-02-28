@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="hello" class="title">Hello  World DOM</h1>
+    <p id="message">Minha primeira manipulação de D.O.M com JS</p>
+
+    <button onclick="show()">Mostrar</button>
+    <button onclick="hide()">Esconder</button>
+    <br>
+    <br>
+
+    <div id="square">
+
+    </div>
+
+    <br>
+    <br>
+
+    <button onclick="hideShow()">Mostrar/Esconder</button>
+
+    <br>
+    <br>
+
+    <div id="secondSquare">
+
+    </div>
+</body>
+<script>
+    document.getElementById('hello').innerHTML = "hi UNIMAR"
+    document.getElementById('message').style.background = 'white'
+    document.getElementById('message').hidden = false
+
+    function hide(){
+        document.getElementById('square').hidden = true
+    }
+
+    function show(){
+        document.getElementById('square').hidden = false
+    }
+
+    function hideShow(){
+        let element = document.getElementById('secondSquare')
+        element.hidden = !element.hidden
+
+        // if (element.hidden) {
+        //     element.hidden = false
+        //     return
+        // }
+        // element.hidden = false
+        // return
+    }
+</script>
+</html>
+
+<!-- 
+    getElementById()
+    getElementsByTagName()
+    getElementsByClassName()
+    querySelector()
+    querySelectorAll()
+ -->
