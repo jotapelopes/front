@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <p id="text-login" hidden>Carregando...</p>
+            <input type="email" id="email" placeholder="E-mail: ">
+            <p id="text-required-email" hidden>Informe esse campo</p>
+            <input type="password" id="password" placeholder="Senha: "><br>
+            <p id="text-required-password" hidden>Informe esse campo</p>
+            <button onclick="hide()" id="sign-in">Entrar</button>
+            <button onclick="cancel()" id="cancel" hidden>Cancelar</button>
+        </div>
+    </div>
+</body>
+<script src="assets/js/index.js"></script>
+</html>
